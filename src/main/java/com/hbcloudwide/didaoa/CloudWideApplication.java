@@ -41,13 +41,13 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
-public class DidaoaWebApplication extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer {
+public class CloudWideApplication extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer {
 
-    private static final Logger logger = LoggerFactory.getLogger(DidaoaWebApplication.class);
+    private static final Logger logger = LoggerFactory.getLogger(CloudWideApplication.class);
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(DidaoaWebApplication.class);
+        return builder.sources(CloudWideApplication.class);
     }
 
     @Override
@@ -58,7 +58,7 @@ public class DidaoaWebApplication extends SpringBootServletInitializer implement
 
     public static void main(String[] args) throws Exception {
 
-        SpringApplication.run(DidaoaWebApplication.class, args);
+        SpringApplication.run(CloudWideApplication.class, args);
 
         logger.debug("Sample Debug Message");
     }

@@ -17,7 +17,7 @@ import java.util.List;
  * Created by lxq on 15-11-18.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = DidaoaWebApplication.class)
+@SpringApplicationConfiguration(classes = CloudWideApplication.class)
 public class TestDruid {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
